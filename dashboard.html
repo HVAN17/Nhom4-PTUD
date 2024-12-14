@@ -1,0 +1,667 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="images/logo/logo-favicon.png" rel="shortcut icon">
+    <title>Cocoon</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="config">
+    <div class="preloader is-active">
+        <div class="preloader__wrap">
+            <img class="preloader__img" src="images/preloader.png" alt="">
+        </div>
+    </div>
+    <div id="app">
+        <header class="header--style-2">
+            <nav class="primary-nav-wrapper">
+                <div class="container">
+                    <div class="primary-nav">
+                        <a class="main-logo" href="index.php">
+                            <img src="images/logo/logo-2.png" alt="">
+                        </a>
+                        <form class="main-form">
+                            <label for="main-search"></label>
+                            <input class="input-text input-text--border-radius input-text--only-white" type="text" id="main-search" placeholder="Tìm kiếm">
+                            <button class="btn btn--icon fas fa-search main-search-button" type="submit"></button>
+                        </form>
+                    
+                        <div class="menu-init" id="navigation">
+                        
+                            <button style="color:aliceblue;" class="btn btn--icon toggle-button toggle-button--white fas fa-cogs" type="button"></button>
+                            <div class="ah-lg-mode">
+                                <span class="ah-close">X Đóng</span>
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-white">
+                                
+                                    <li class="has-dropdown" data-tooltip="tooltip" data-placement="left" title="Tài khoản">
+                                        <a><i class="far fa-user-circle"></i></a>
+                                        <span class="js-menu-toggle"></span>
+                                        <ul style="width:120px">
+                                            <li>
+
+                                                <a href="dashboard.html">
+                                                    <i class="fas fa-user-circle u-s-m-r-6"></i>
+                                                    <span>Tài khoản</span>
+                                                </a>
+                                            </li>
+                                            
+                                            <li>
+
+                                                <a href="signup.html">
+                                                    <i class="fas fa-lock-open u-s-m-r-6"></i>
+                                                    <span>Đăng xuất</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="admin.html">
+                                                    <i class="far fa-user-circle u-s-m-r-6"></i>
+                                                    <span>  Admin </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!--====== End - Dropdown ======-->
+                                    </li>
+
+                                    <!-- đoạn code này dùng để hiển thị những nội dung liên quan đến icon Liên hệ-->
+                                    <li data-tooltip="tooltip" data-placement="left" title="Liên hệ">
+                                        <a href="tel:+0900901904"><i class="fas fa-phone-volume"></i></a>
+                                    </li>
+
+                                    <!-- đoạn code này dùng để hiển thị những nội dung liên quan đến icon email-->
+                                    <li data-tooltip="tooltip" data-placement="left" title="Gửi mail">
+                                        <a href="#"><i class="far fa-envelope"></i></a>
+                                    </li>
+
+
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                    </div>
+                    <!--====== End - Primary Nav ======-->
+                </div>
+            </nav>
+            <!--====== End - Nav 1 (hết dòng menu đầu tiên) ======-->
+            <!--====== Nav 2 (dòng menu thứ hai) ======-->
+            <nav class="secondary-nav-wrapper">
+                <div class="container">
+
+                    <!--====== Secondary Nav ======-->
+                    <div class="secondary-nav">
+
+                        <!--====== Dropdown Main plugin: dòng code này nhằm mục đích để thanh menu trang chủ, cửa hàng,... được đẩy vào giữa ======-->
+                        <!--======Tạo responsive design cho header-->
+                        <div class="menu-init" id="navigation1">
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                        <!--====== Dropdown Main plugin ======-->
+                        <div class="menu-init" id="navigation2">
+
+                            <button style="color:aliceblue;" class="btn btn--icon toggle-button toggle-button--white fas fa-bars" type="button"></button>
+                            <!--====== Menu ======-->
+                            <div class="ah-lg-mode">
+                                <span class="ah-close">X Đóng</span>
+
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design2 ah-list--link-color-white">
+
+                                    <li>
+                                        <a href="index.php">TRANG CHỦ</a>
+                                    </li>
+
+                                    <li class="has-dropdown">
+                                        <a href="shop-grid-left.php">CỬA HÀNG<i class="fas fa-angle-down u-s-m-l-6"></i></a>
+ <!--====== Dropdown ======-->
+ <span class="js-menu-toggle"></span>
+ <ul style="width:170px">
+
+     <li class="has-dropdown has-dropdown--ul-left-100">
+         <a href="shop-grid-left.php">Sản phẩm mới</a>
+     </li>
+
+     <li class="has-dropdown has-dropdown--ul-left-100">
+         <a href="shop-grid-left.php">Dưỡng môi</a>
+
+
+     </li>
+
+     <li class="has-dropdown has-dropdown--ul-left-100">
+         <a href="shop-grid-left.php">Chăm sóc da</a>
+
+     <li class="has-dropdown has-dropdown--ul-left-100">
+         <a href="shop-grid-left.php">Chăm sóc tóc</a>
+     </li>
+     <li class="has-dropdown has-dropdown--ul-left-100">
+         <a href="shop-grid-left.php">Combo/Bộ Sản phẩm</a>
+
+     </li>
+ </ul>
+ <!--====== End - Dropdown ======-->
+</li>
+
+<li>
+    <a href="blog.php">BLOG</a>
+</li>
+
+<li>
+    <a href="aboutcoon.php">VỀ COCOON</a>
+</li>
+
+<li>
+    <a href="cart.php">THANH TOÁN</a>
+</li>
+
+
+                                </ul>
+                                <!--====== End - List ======-->
+                            </div>
+                            <!--====== End - Menu ======-->
+                        </div>
+                        <!--====== End - Dropdown Main plugin ======-->
+                        <!--====== Dropdown Main plugin: đoạn code này dùng để thể hiện các biểu tượng wishlist; giỏ hàng và những nội dung liên quan đến biểu tương ======-->
+                        <div class="menu-init" id="navigation3">
+                            <button style="color:aliceblue;" class="btn btn--icon toggle-button toggle-button--white fas fa-shopping-bag toggle-button-shop" type="button"></button>
+                            <div class="ah-lg-mode">
+                                <span class="ah-close">X Đóng</span>
+                                <!--====== Menu ======-->
+                                <!--====== List ======-->
+                                <ul class="ah-list ah-list--design1 ah-list--link-color-white">
+<!--Biểu tượng wishlist-->
+                                    <li>
+                                        <a href="dash-my-wishlist.html"><i class="far fa-heart"></i></a>
+                                    </li>
+
+                                    <!--Biểu tưởng giỏ hàng-->
+                                    <li class="has-dropdown">
+    <a class="mini-cart-shop-link" href="http://localhost/Admin/CoolAdmin/cart.php"> <!-- Thay "/cart" bằng link bạn muốn -->
+        <i class="fas fa-shopping-bag"></i>
+        <span class="total-item-round"></span>
+    </a>
+
+
+                                        <!--====== Dropdown ======-->
+                                        <span class="js-menu-toggle"></span>
+                                        <div class="mini-cart">
+        </header>
+      
+        <!--====== End - Main Header ======-->
+        <!--====== App Content ======-->
+        <div class="app-content">
+
+            <!--====== Section 1 ======-->
+            <div class="u-s-p-y-60">
+
+                <!--====== Section Content ======-->
+                <div class="section__content">
+                    <div class="container">
+                        <div class="breadcrumb">
+                            <div class="breadcrumb__wrap">
+                                <ul class="breadcrumb__list">
+                                    <li class="has-separator">
+                                        <a href="index.php">Trang chủ</a>
+                                    </li>
+                                    <li class="is-marked">
+                                        <a href="dashboard.html">Tài khoản</a>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--====== End - Section 1 ======-->
+            <!--====== Section 2 ======-->
+            <div class="u-s-p-b-60">
+                <div class="section__content">
+                    <div class="dash">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="dash__box dash__box--bg-white dash__box--shadow u-s-m-b-30">
+                                        <div class="dash__pad-1">
+                                            <span class="dash__text u-s-m-b-16">Cocoon xin chào </span>
+                                            <ul class="dash__f-list">
+                                                <li>
+                                                    
+                                                    <a class="dash-active" href="dashboard.html">Quản lý tài khoản</a>
+                                                </li>
+
+                                                <li>
+                                             
+                                                    <a href="dash-my-order.php">Đơn hàng của tôi</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                      
+                                                    <div class="dash__w-wrap">                                                   
+                                            </ul>
+                                        </div>
+                                    
+                                </div>
+                                <div class="col-lg-9 col-md-12">
+                                <div class="dash__box dash__box--shadow dash__box--radius dash__box--bg-white u-s-m-b-30">
+                                        <div class="dash__pad-2">
+                                            <h1 class="dash__h1 u-s-m-b-14">Quản lý tài khoản</h1>
+
+                                            <span class="dash__text u-s-m-b-30"></span>
+                                            <div class="row">
+                                                <div class="col-lg-10 u-s-m-b-50">
+                                                    <div class="dash__box dash__box--bg-grey dash__box--shadow-2 u-h-100">
+                                                        <div class="dash__pad-3">
+                                                            <h2 class="dash__h2 u-s-m-b-10">THÔNG TIN CÁ NHÂN</h2>
+
+                                                            <form id="edit-form" action="update_info.php" method="POST">
+                                                                <label>Họ:</label>
+                                                                <input type="text" name="ho" id="ho" value=""><br>
+                                                    
+                                                                <label>Tên:</label>
+                                                                <input type="text" name="ten" id="ten" value=""><br>
+                                                    
+                                                                <label>Email:</label>
+                                                                <input type="email" name="email" id="email" value="" readonly><br>
+                                                    
+             
+                                                                <label>Giới tính:</label>
+                                                                <select name="gioitinh" id="gioitinh">
+                                                                    <option value="Nam">Nam</option>
+                                                                    <option value="Nữ">Nữ</option>
+                                                                    <option value="Khác">Khác</option>
+                                                                </select><br>
+                                                    
+                                                                <label>Ngày sinh:</label>
+                                                                <input type="date" name="ngaysinh" id="ngaysinh" value=""><br>
+                                                    
+                                                                <label>Địa chỉ:</label>
+                                                                <input type="text" name="diachi" id="diachi" value=""><br>
+                                                    
+                                                                <button type="submit">Lưu thay đổi</button>
+                                                            </form>
+                                                        </div>
+                                                    
+                                                        <script>
+                                                            window.onload = async function () {
+                                                                const response = await fetch('get_user_info.php');
+                                                                const data = await response.json();
+                                                    
+                                                                if (data) {
+                                                                    document.getElementById('ho').value = data.ho;
+                                                                    document.getElementById('ten').value = data.ten;
+                                                                    document.getElementById('email').value = data.email;
+                                                                    document.getElementById('gioitinh').value = data.gioitinh;
+                                                                    document.getElementById('ngaysinh').value = data.ngaysinh;
+                                                                    document.getElementById('diachi').value = data.diachi;
+                                                                }
+                                                            };
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <style>
+                                    
+/* Tổng thể */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Khung quản lý tài khoản */
+.dash__box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.dash__box--shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Padding */
+.dash__pad-2 {
+    padding: 20px;
+}
+
+.dash__pad-3 {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+/* Tiêu đề */
+.dash__h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 16px;
+}
+
+.dash__h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: goldenrod;
+    margin-bottom: 12px;
+}
+
+/* Văn bản phụ */
+.dash__text {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bolder;
+    font-size: 14px;
+    font-weight: 500;
+    color: goldenrod;
+    margin-bottom: 8px;
+}
+
+form input, form select {
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+form button {
+    text-align: center;
+    background: goldenrod;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Đảm bảo nút không chiếm toàn bộ chiều rộng */
+}
+
+form button:hover {
+    background: palegoldenrod;
+    transform: scale(1.02);
+}
+
+/* Định dạng cột */
+.col-lg-9, .col-md-12 {
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.row .col-lg-10 {
+    padding: 0 15px;
+}
+
+/* Khoảng cách */
+.u-s-m-b-30 {
+    margin-bottom: 30px;
+}
+
+.u-s-m-b-50 {
+    margin-bottom: 50px;
+}
+
+
+                                    </style>
+                        <!-- Phần Hiển Thị Thông Tin Giỏ Hàng và Các Tùy Chọn -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="s-option">
+                            
+                                <div class="s-option__link-box">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== Kết Thúc - Thêm vào Giỏ Hàng ======-->
+    <!--====== End - Modal Section ======-->
+    </div>
+    <!--====== Footer chính ======-->
+    <!--Thẻ footer dùng để tạo chân trang (footer) cho website-->
+    <!--Phần footer bao gồm thông tin liên hệ, Menu phụ và đăng ký nhận thông tin mới -->
+    <footer>
+        <div class="outer-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="outer-footer__content u-s-m-b-40">
+                            <!--Hiển thị các thông tin để khách hàng có thể liên hệ với Cocoon-->
+                            <span class="outer-footer__content-title">Liên hệ với chúng tôi</span>
+
+                            <div class="outer-footer__text-wrap">
+                                <i class="fas fa-home"></i>
+                                <span>279 Nguyễn Tri Phương, phường 5, quận 10, TP. Hồ Chí Minh</span>
+                            </div>
+
+                            <div class="outer-footer__text-wrap">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>(+0) 890 372 444</span>
+                            </div>
+
+                            <div class="outer-footer__text-wrap">
+                                <i class="far fa-envelope"></i>
+                                <span>Cocoon.contact@gmail.com</span>
+                            </div>
+
+                            <div class="outer-footer__social">
+                                <ul>
+                                    <li>
+                                        <a class="s-fb--color-hover" href="https://www.facebook.com/CocoonVietnamOfficial"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-tw--color-hover" href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-youtube--color-hover" href="https://www.youtube.com/@cocoonvietnamofficial4200"><i class="fab fa-youtube"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-insta--color-hover" href="https://www.instagram.com/cocoon.vietnam/"><i class="fab fa-instagram"></i></a>
+                                    </li>
+
+                                    <li>
+                                        <a class="s-gplus--color-hover" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!--điều chỉnh thông số-->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="outer-footer__content u-s-m-b-40">
+                                    <span class="outer-footer__content-title">Thông tin</span>
+                                    <div class="outer-footer__list-wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="cart.html">Giỏ hàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="dashboard.html">Tài khoản</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tài chính</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.php">Mua hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-6">
+                                <div class="outer-footer__content u-s-m-b-40">
+                                    <div class="outer-footer__list-wrap">
+
+                                        <span class="outer-footer__content-title">Cocoon</span>
+                                        <ul>
+                                            <li>
+
+                                                <a href="#">Giới thiệu</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Liên hệ</a>
+                                            </li>
+                                            <li>
+
+                                                <a href="dash-my-order.phpl">Giao hàng</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-grid-left.php">Cửa hàng</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Khu vực form đăng ký -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="outer-footer__content">
+                            <span class="outer-footer__content-title">Đăng ký nhận thông tin mới</span>
+                            <form class="newsletter">
+                                <div class="u-s-m-b-15">
+                                    <div class="radio-box newsletter__radio">
+                                        <input type="radio" id="male" name="gender">
+                                        <div class="radio-box__state radio-box__state--primary">
+                                            <label class="radio-box__label" for="male">Nam</label>
+                                        </div>
+                                    </div>
+                                    <div class="radio-box newsletter__radio">
+                                        <input type="radio" id="female" name="gender">
+                                        <div class="radio-box__state radio-box__state--primary">
+                                            <label class="radio-box__label" for="female">Nữ</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="newsletter__group">
+                                    <label for="newsletter"></label>
+                                    <input class="input-text input-text--only-white" type="text" id="newsletter" placeholder="Nhập E-mail của bạn">
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng ký</button>
+                                </div>
+                                <span class="newsletter__text">Đăng ký vào danh sách gửi thư để nhận thông tin cập nhật về chương trình khuyến mãi, hàng mới, giảm giá và phiếu giảm giá.</span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="lower-footer__content">
+                            <div class="lower-footer__copyright">
+                                <span>Copyright © 2024</span>
+                                <a href="index.php" style="color: white">Cocoon</a>
+                                <span>Bảo lưu mọi bản quyền</span>
+                            </div>
+                            <div>
+                                <span>
+                                    <!--thêm hình ảnh chứng nhận-->
+                                    <img src="https://cocoonvietnam.com/_nuxt/img/ministry-of-industry-n-trade.199a108.png" width="200px">
+                                    <span />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!--====== End - Main App ======-->
+    <!--====== Google Analytics: change UA-XXXXX-Y to be your site's ID ======-->
+    <script>
+        // Tạo đối tượng Google Analytics
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        // Khởi tạo Google Analytics với ID trang web
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        // Gửi thông tin trang cho Google Analytics
+        ga('send', 'pageview')
+    </script>
+    <!-- Nạp script của Google Analytics từ địa chỉ cung cấp -->
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <!--====== Vendor Js ======-->
+    <!-- Nạp các tập tin JavaScript của bên thứ ba (Vendor Js) -->
+    <script src="js/vendor.js"></script>
+
+    <!--====== jQuery Shopnav plugin ======-->
+    <!-- Nạp plugin jQuery Shopnav -->
+    <script src="js/jquery.shopnav.js"></script>
+
+    <!--====== App ======-->
+    <!-- Nạp script của ứng dụng chính (App) -->
+    <script src="js/app.js"></script>
+
+    <!--====== Noscript ======-->
+    <!-- Hiển thị thông báo khi JavaScript bị tắt -->
+    <noscript>
+        <div class="app-setting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="app-setting__wrap">
+                            <h1 class="app-setting__h1">JavaScript đã tắt trong trình duyệt.</h1>
+
+                            <span class="app-setting__text">Vui lòng kích hoạt JavaScript trong trình duyệt hoặc nâng cấp lên một trình duyệt hỗ trợ JavaScript.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</body>
+
+</html>
